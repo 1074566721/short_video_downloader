@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>360</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>360</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>短视频去水印下载器</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>281</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;</string>
+   </property>
+   <property name="dragEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>请输入一条短视频分享链接</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="download_btn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>110</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton,
+.QToolButton {
+    background: #FFF;
+    border: 1px solid #DCDFE6;
+    color: #606266;
+    padding: 5px;
+    min-height: 15px;
+    border-radius: 8px;
+}
+.QPushButton:hover,
+.QToolButton:hover {
+    color: #409EFF;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+
+.QPushButton:pressed,
+.QToolButton:pressed {
+    color: #3a8ee6;
+    border-color: #3a8ee6;
+    outline: 0;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>抖音</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/newPrefix/icon/douyin.png</normaloff>:/newPrefix/icon/douyin.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>26</width>
+     <height>26</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>90</y>
+     <width>110</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton,
+.QToolButton {
+    background: #FFF;
+    border: 1px solid #DCDFE6;
+    color: #606266;
+    padding: 5px;
+    min-height: 15px;
+    border-radius: 8px;
+}
+.QPushButton:hover,
+.QToolButton:hover {
+    color: #409EFF;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+
+.QPushButton:pressed,
+.QToolButton:pressed {
+    color: #3a8ee6;
+    border-color: #3a8ee6;
+    outline: 0;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>快手</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/newPrefix/icon/kuaishou.png</normaloff>:/newPrefix/icon/kuaishou.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>140</y>
+     <width>110</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton,
+.QToolButton {
+    background: #FFF;
+    border: 1px solid #DCDFE6;
+    color: #606266;
+    padding: 5px;
+    min-height: 15px;
+    border-radius: 8px;
+}
+.QPushButton:hover,
+.QToolButton:hover {
+    color: #409EFF;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+
+.QPushButton:pressed,
+.QToolButton:pressed {
+    color: #3a8ee6;
+    border-color: #3a8ee6;
+    outline: 0;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>皮皮搞笑</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/newPrefix/icon/pipigaoxiao.png</normaloff>:/newPrefix/icon/pipigaoxiao.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="download_btn_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>110</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton,
+.QToolButton {
+    background: #FFF;
+    border: 1px solid #DCDFE6;
+    color: #606266;
+    padding: 5px;
+    min-height: 15px;
+    border-radius: 8px;
+}
+.QPushButton:hover,
+.QToolButton:hover {
+    color: #409EFF;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+
+.QPushButton:pressed,
+.QToolButton:pressed {
+    color: #3a8ee6;
+    border-color: #3a8ee6;
+    outline: 0;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>微视</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/newPrefix/icon/weishi.png</normaloff>:/newPrefix/icon/weishi.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>download_kuaishou()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>379</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>download_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>download_douyin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>99</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>379</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>download_pipigaoxiao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>379</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>download_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>download_weishi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>202</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-15</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>download_kuaishou()</slot>
+  <slot>download_douyin()</slot>
+  <slot>download_pipigaoxiao()</slot>
+  <slot>download_weishi()</slot>
+  <slot>download_xiaohongshu()</slot>
+ </slots>
+</ui>

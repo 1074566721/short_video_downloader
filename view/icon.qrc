@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icon/pipigaoxiao.png</file>
+    <file>icon/douyin.png</file>
+    <file>icon/kuaishou.png</file>
+    <file>icon/weishi.png</file>
+  </qresource>
+</RCC>
