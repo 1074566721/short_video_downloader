@@ -79,9 +79,9 @@ class GetDouyinThread(GetVideoThread):
         super(GetDouyinThread, self).__init__(parent=parent, class_name=get_video.GetDouyinVideo, url_text=url_text)
 
     def request_url(self, first_url, video_name):
+        params = get_video.GetDouyinVideo.first_request(first_url)
+        play_url = get_video.GetDouyinVideo.second_request(params)
         while True:
-            params = get_video.GetDouyinVideo.first_request(first_url)
-            play_url = get_video.GetDouyinVideo.second_request(params)
             video_url = get_video.GetDouyinVideo.third_request(play_url)
             flag, video = get_video.GetDouyinVideo.fourth_request(video_url)
             print('返回的标记:{}和视频:{}'.format(flag, video))
@@ -97,8 +97,8 @@ class GetKuaishouThread(GetVideoThread):
         super(GetKuaishouThread, self).__init__(parent=parent, class_name=get_video.GetKuaishouVideo, url_text=url_text)
 
     def request_url(self, first_url, video_name):
+        second_url = get_video.GetKuaishouVideo.first_request(first_url)
         while True:
-            second_url = get_video.GetKuaishouVideo.first_request(first_url)
             video_url = get_video.GetKuaishouVideo.second_request(second_url)
             flag, video = get_video.GetKuaishouVideo.third_request(video_url)
             print('返回的标记:{}和视频:{}'.format(flag, video))
