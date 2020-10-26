@@ -186,7 +186,7 @@ class GetKuaishouVideo():
 
         # https://txmov2.a.yximgs.com/bs2/newWatermark/Mzc5NDg4OTkxNjU_zh_4.mp4
         content = response.text
-        # print(content)
+        print(content)
         # "srcNoMark":"https://txmov2.a.yximgs.com/upic/2020/10/19/21/BMjAyMDEwMTkyMTQ1MDRfMTg1NjY1NDIyMV8zNzk0ODg5OTE2NV8xXzM=_b_B00dec48f91be3a545f2e7d0dea127acc.mp4?clientCacheKey=3x84ejxivx6vgeu_b.mp4&tt=b&di=716808c2&bp=13380"}
         video_url = re.search(r'"srcNoMark":"https://txmov2.a.yximgs.com/.*?\"', content).group()[13:-1]
         print(video_url)
@@ -246,7 +246,7 @@ class GetPipigaoxiaoVideo():  # 皮皮搞笑
         # print("【皮皮搞笑】: {}.mp4 无水印视频下载完成！".format(video_name))
 
 
-class GetWeishiVideo():  # 皮皮搞笑
+class GetWeishiVideo():
     @staticmethod
     def compile_name_url(url_text):
         video_name = re.findall(r'(\w*)', url_text)
@@ -270,7 +270,6 @@ class GetWeishiVideo():  # 皮皮搞笑
             'content-type': 'application/json',
             'cookie': 'RK=BuAQ1v+yV3; ptcz=6f7072f84fa03d56ea047b407853df6a5375d719df1031ef066d11b09fb679e4; pgv_pvi=8434466816; pgv_pvid=1643353500; tvfe_boss_uuid=3b10306bf3ae662b; o_cookie=1074566721; pac_uid=1_1074566721; ied_qq=o1074566721; LW_sid=k1Y5n9s3Y0K866h7P246v4k6o8; LW_uid=u1v5i9V3p0L806m7R226s4W7F1; eas_sid=J1p5G9s3A0h8Z6c7l2a6x4E7w7; iip=0; ptui_loginuin=1074566721; person_id_bak=5881015637151283; person_id_wsbeacon=5920911274348544; wsreq_logseq=341295039',
             'origin': 'https://h5.weishi.qq.com',
-            'referer': 'https://h5.weishi.qq.com/weishi/feed/6YOEssLYo1KvwmQZe/wsfeed?wxplay=1&id=6YOEssLYo1KvwmQZe&collectionid=ai-5f92ed6ad2ba0e4845aaf6bc&themeid=ai-5f530051d2ba0e0e054a0788&spid=9054808233834139648&qua=v1_and_weishi_8.3.1_588_312027000_d&chid=100081003&pkg=&attach=cp_reserves3_1000370721',
             'sec-fetch-dest': 'empty',
             'sec-fetch-mode': 'cors',
             'sec-fetch-site': 'same-origin',
