@@ -4,7 +4,6 @@ from model.thread_api import GetDouyinThread, GetPipigaoxiaoThread, GetKuaishouT
 from view.download_panel import Ui_Form
 import view.icon_rc
 
-url_text = ''
 
 
 class Download_panel(QWidget, Ui_Form):
@@ -16,13 +15,11 @@ class Download_panel(QWidget, Ui_Form):
 
 
     def download_weishi(self):
-        global url_text
         url_text = self.lineEdit.text()
         thread = GetWeishiThread(self, url_text)  # 开启一个子线程用于下载视频
         self.create_thread(thread)  # 创建一个子线程
 
     def download_pipigaoxiao(self):
-        global url_text
         url_text = self.lineEdit.text()
         thread = GetPipigaoxiaoThread(self, url_text)  # 开启一个子线程用于下载视频
         self.create_thread(thread)  # 创建一个子线程
@@ -30,7 +27,6 @@ class Download_panel(QWidget, Ui_Form):
     def download_douyin(self):
         # print('点击了下载')
         self.download_btn.setEnabled(False)  # 如果点击了下载则设置按钮为不可用
-        global url_text
         url_text = self.lineEdit.text()
         thread = GetDouyinThread(self, url_text)  # 开启一个子线程用于下载视频
         self.create_thread(thread)  # 创建一个子线程
@@ -38,7 +34,6 @@ class Download_panel(QWidget, Ui_Form):
     def download_kuaishou(self):
         # print('点击了下载')
         self.download_btn.setEnabled(False)  # 如果点击了下载则设置按钮为不可用
-        global url_text
         url_text = self.lineEdit.text()
         thread = GetKuaishouThread(self, url_text)  # 开启一个子线程用于下载视频
         self.create_thread(thread)  # 创建一个子线程
