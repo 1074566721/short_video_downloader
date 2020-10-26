@@ -5,14 +5,12 @@ from view.download_panel import Ui_Form
 import view.icon_rc
 
 
-
 class Download_panel(QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
         self.setAttribute(Qt.WA_StyledBackground, True)
         self.setupUi(self)
         self.setWindowFlags(Qt.MSWindowsFixedSizeDialogHint)
-
 
     def download_weishi(self):
         url_text = self.lineEdit.text()
