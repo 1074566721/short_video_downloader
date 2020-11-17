@@ -1,6 +1,6 @@
 from PyQt5.Qt import *
 
-from tools import get_video
+from utils import get_video
 
 
 class GetVideoThread(QThread):

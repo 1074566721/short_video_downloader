@@ -1,6 +1,6 @@
 from PyQt5.Qt import *
 
-from tools.thread_api import GetDouyinThread, GetPipigaoxiaoThread, GetKuaishouThread, GetWeishiThread
+from utils.thread_api import GetDouyinThread, GetPipigaoxiaoThread, GetKuaishouThread, GetWeishiThread
 from view.download_panel import Ui_Form
 import view.icon_rc
 
