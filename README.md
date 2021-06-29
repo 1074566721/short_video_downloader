@@ -7,5 +7,3 @@
 [gitee](https://gitee.com/yang6030/short_video_downloader.git)
 
 [github](https://github.com/yang6030/short_video_downloader.git)
-
-pip的支持，看后续有没心情去研究上传pypi吧..................
